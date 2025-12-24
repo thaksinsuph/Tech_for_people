@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<title>แจ้งเบาะแส</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-content">
+    <h1>📍 แจ้งเบาะแสการทุจริต</h1>
+    <p class="subtitle">
+      ระบบไม่บันทึกข้อมูลส่วนบุคคล  
+      เพื่อความปลอดภัยของผู้แจ้ง
+    </p>
+  </div>
+</header>
+
+<section class="container">
+  <div class="card" style="max-width:520px;margin:auto;">
+    <label>ประเภทการร้องเรียน</label>
+    <select>
+      <option>งบประมาณผิดปกติ</option>
+      <option>รับส่วย</option>
+      <option>ใช้อำนาจมิชอบ</option>
+    </select>
+
+    <label>พื้นที่ / หน่วยงาน</label>
+    <input type="text" placeholder="เช่น อบต. / โรงเรียน / โครงการ">
+
+    <label>รายละเอียดเพิ่มเติม</label>
+    <textarea rows="5"></textarea>
+
+    <button style="margin-top:20px" onclick="go('dashboard.html')">
+      ส่งเรื่องร้องเรียน
+    </button>
+  </div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
